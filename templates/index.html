@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Next Word Prediction</title>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <section id = "predict">
+            <div class = "box">
+                <div class = "form-title">
+                    <h2>Next Word Prediction</h2>
+                </div>
+                <div class = "form-wrapper">
+                    <form action = "/predict" method = "POST">
+                        <div class = "form-item">
+                            <textarea id="text" name = "text" required = ""></textarea>
+                            <label>Enter text:</label>
+                        </div>
+                        <div class = "output">
+                            <h4>{{result}}</h4>
+                        </div>
+                        <button class="predict-btn">Predict</button>  
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
