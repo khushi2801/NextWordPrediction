@@ -5,8 +5,11 @@ from tensorflow.keras.models import load_model
 import pickle
 import heapq
 
+# Length of input sequence used for prediction
 SEQUENCE_LENGTH = 40
+# Total characters in dataset
 chars_size = 71
+# Indexing characters
 char_indices = pickle.load(open('char_indices.pkl', 'rb'))
 indices_char = pickle.load(open('indices_char.pkl', 'rb'))
 chars = np.load('chars.npy')
